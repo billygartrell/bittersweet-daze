@@ -89,6 +89,7 @@ button{
     font-weight: 700;
     font-style: normal;
     text-transform:uppercase;
+    color:#000000;
 }
 
 button:hover{
