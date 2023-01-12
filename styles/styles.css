@@ -28,6 +28,19 @@ p {
     font-size:20px;
     margin:0;
 }
+#mc_embed_signup, #mc_embed_signup_scroll{
+    width:100%;
+}
+
+#mc_embed_signp_scroll{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+
+}
 
 .form {
     display: flex;
@@ -59,20 +72,26 @@ p {
     text-transform:uppercase;
 }
 
+.form-container{
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: pink;
+    color: #000;
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    color: pink;
+    color: #000;
   }
   :-ms-input-placeholder { /* IE 10+ */
-    color: pink;
+    color: #000;
   }
   :-moz-placeholder { /* Firefox 18- */
-    color: pink;
+    color: #000;
   }
 
-button{
+.submit-button{
     padding: 10px 20px;
     
     width:100%;
@@ -92,7 +111,7 @@ button{
     color:#000000;
 }
 
-button:hover{
+.submit-button:hover{
     background:#F3AF00;
 }
 
@@ -125,10 +144,16 @@ button:hover{
         width:100%;
         text-align:left;
     }
-    
-    button{
-        width:40%;
+
+    .form-container{
+        display:flex;
+        flex-direction: row;
     }
+    
+    
+    /* .submit-button{
+        width:40%;
+    } */
  }
 
 /* // Large devices (desktops, 992px and up) */
